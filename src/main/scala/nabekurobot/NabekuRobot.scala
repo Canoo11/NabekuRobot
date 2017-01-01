@@ -1,12 +1,12 @@
-package discot
+package nabekurobot
 
 import sx.blah.discord.api._
-import discot.EventHandler._
+import nabekurobot.EventHandler._
 
-class Discot(val token: String) {
+class NabekuRobot(val token: String) {
   val client = new ClientBuilder().withToken(token).login()
 
-  println("discot instantiated")
+  println("NabekuRobot instantiated")
 
   client.getDispatcher.registerListener(MessageReceiveHandler)
   client.getDispatcher.registerListener(MentionHandler)

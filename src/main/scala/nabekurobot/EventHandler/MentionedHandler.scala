@@ -1,4 +1,4 @@
-package discot.EventHandler
+package nabekurobot.EventHandler
 
 import sx.blah.discord.api.events.IListener
 import sx.blah.discord.handle.impl.events.MentionEvent
