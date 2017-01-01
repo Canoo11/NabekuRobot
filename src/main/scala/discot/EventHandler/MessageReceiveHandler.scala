@@ -12,7 +12,12 @@ object MessageReceiveHandler extends IListener[MessageReceivedEvent] {
     val channelName = message.getChannel.getName
     val c = message.getContent
 
-    if(channelName.equals(watchChannel)) println(channelName + ":" + c)
+    if (channelName == "bot"){
+      c match {
+        case "!Bon" => message reply "fire"
+        case _ =>
+      }
+    }
   }
 }
 
